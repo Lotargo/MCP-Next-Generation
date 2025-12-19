@@ -1,0 +1,20 @@
+go 1.24.11
+
+use (
+	./MCP-NG/cmd/gatekeeper
+	./MCP-NG/server
+	./MCP-NG/tests/integration
+	./MCP-NG/tools/go/api_caller
+	./MCP-NG/tools/go/calculator
+	./MCP-NG/tools/go/db_querier
+	./MCP-NG/tools/go/file_reader
+	./MCP-NG/tools/go/file_writer
+	./MCP-NG/tools/go/list_directory
+	./MCP-NG/tools/go/log_notifier
+	./MCP-NG/tools/go/tool_manager
+	./MCP-NG/tools/go/web_search_simple
+	./MCP-NG/tools/go/web_search_tavily
+	./mcp-shared-goutils
+	./mcp-shared-proto
+	./tests/load_tester
+)

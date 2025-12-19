@@ -1,0 +1,18 @@
+{
+    "name": "web_search_simple",
+    "description": "Powered by Serper.dev. Optimized for Mistral Small and other efficient models. Use this for simple, factual web search queries.",
+    "inputSchema": {
+        "type": "object",
+        "properties": {
+            "query": {
+                "type": "string",
+                "description": "The search query."
+            }
+        },
+        "required": ["query"]
+    },
+    "command":  [
+        "web_search_simple"
+    ],
+    "required_secrets": ["SERPER_API_KEY"]
+}

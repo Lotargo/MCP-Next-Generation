@@ -1,0 +1,6 @@
+{
+    "name": "fastapi_calculator",
+    "description": "Evaluates a mathematical expression.",
+    "command": ["poetry", "run", "python", "server.py"],
+    "type": "python"
+}

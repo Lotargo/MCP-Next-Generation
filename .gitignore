@@ -1,0 +1,48 @@
+# Compiled binaries
+bin/
+*.exe
+MCP-NG/bin/
+MCP-NG/server/cmd/server/server
+
+# Python virtual environment
+.venv/
+__pycache__/
+
+# VSCode
+.vscode/
+
+# Temp files
+*.tmp
+*.swp
+*.swo
+
+# backup
+.111copy
+
+# Log files
+*.log
+logs/
+
+# Test output
+test_output.txt
+test_output_cl.txt
+client.log
+
+# Test artifacts
+agent_input.txt
+agent_output.txt
+agent.log
+host.log
+calculator.log
+agent_stdout.log
+agent_pipe
+openai_host/.env
+
+# Python artifacts
+.pytest_cache/
+__pycache__/
+resources/*
+!resources/.gitkeep
+
+# Secrets
+env/

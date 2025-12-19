@@ -1,0 +1,15 @@
+{
+    "name": "list_directory",
+    "description": "Lists the contents of a directory on the server's file system. Allows viewing files and folders.",
+    "inputSchema": {
+        "type": "object",
+        "properties": {
+            "path": {
+                "type": "string",
+                "description": "The full, absolute path of the directory to list. IMPORTANT: For Windows paths, ALWAYS use double backslashes (e.g., 'C:\\\\Users\\\\User'). For Unix/Linux paths, use standard forward slashes (e.g., '/home/user')."
+            }
+        },
+        "required": ["path"]
+    },
+    "command": ["list_directory"]
+}

@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "mcp-shared-proto-py"
+version = "0.1.0"
+description = "Shared gRPC protobuf library for the MCP project."
+authors = ["Lotargo"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+grpcio = "^1.64.1"
+protobuf = "~6.31"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

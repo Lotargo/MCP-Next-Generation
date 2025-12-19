@@ -1,0 +1,6 @@
+{
+    "name": "code_interpreter",
+    "description": "Executes a given string of Python code and returns the output from stdout. Handles platform-specific file paths carefully.",
+    "command": ["poetry", "run", "python", "server.py"],
+    "type": "python"
+}

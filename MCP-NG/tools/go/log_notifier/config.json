@@ -1,0 +1,15 @@
+{
+    "name": "log_notifier",
+    "description": "Sends a log notification.",
+    "inputSchema": {
+        "type": "object",
+        "properties": {
+            "message": {
+                "type": "string",
+                "description": "The log message."
+            }
+        },
+        "required": ["message"]
+    },
+    "command": ["log_notifier"]
+}

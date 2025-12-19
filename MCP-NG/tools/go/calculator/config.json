@@ -1,0 +1,27 @@
+{
+  "name": "calculator",
+  "description": "A calculator that can evaluate mathematical expressions or perform simple arithmetic.",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "expression": {
+        "type": "string",
+        "description": "The mathematical expression to evaluate (e.g., '2+2', '10/5*2'). Mutually exclusive with 'operation'."
+      },
+      "operation": {
+        "type": "string",
+        "enum": ["add", "subtract", "multiply", "divide"],
+        "description": "The mathematical operation to perform. Mutually exclusive with 'expression'."
+      },
+      "a": {
+        "type": "number",
+        "description": "First number, requires 'operation'."
+      },
+      "b": {
+        "type": "number",
+        "description": "Second number, requires 'operation'."
+      }
+    }
+  },
+  "command": ["calculator"]
+}

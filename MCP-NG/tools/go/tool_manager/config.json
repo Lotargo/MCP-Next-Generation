@@ -1,0 +1,7 @@
+{
+    "name": "tool_manager",
+    "description": "Manages MCP tools: delete tools securely.",
+    "command": ["tool_manager"],
+    "type": "go",
+    "required_secrets": ["ADMIN_TOKEN"]
+}

@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "mcp-ng-project"
+version = "0.1.0"
+description = "Root project for MCP-NG monorepo, managing top-level dependencies and test runners."
+authors = ["Lotargo"]
+license = "MIT"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiohttp = "^3.13.1"
+httpx = "^0.28.1"
+grpcio = "^1.76.0"
+grpcio-tools = "^1.76.0"
+grpcio-health-checking = "^1.76.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

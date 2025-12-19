@@ -1,0 +1,19 @@
+logging {
+  level = "info"
+  format = "logfmt"
+}
+
+local.file_match "mcp_logs" {
+  path_targets = [{"__path__" = "/var/log/mcp-ng/*.json"}]
+}
+
+loki.source.file "mcp_logs_read" {
+  targets    = local.file_match.mcp_logs.targets
+  forward_to = [loki.write.local.receiver]
+}
+
+loki.write "local" {
+  endpoint {
+    url = "http://loki:3100/loki/api/v1/push"
+  }
+}

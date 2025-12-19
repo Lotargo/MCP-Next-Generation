@@ -1,0 +1,15 @@
+{
+    "name": "api_caller",
+    "description": "Makes an API call to a specified URL.",
+    "inputSchema": {
+        "type": "object",
+        "properties": {
+            "url": {
+                "type": "string",
+                "description": "The URL to call."
+            }
+        },
+        "required": ["url"]
+    },
+    "command": ["api_caller"]
+}

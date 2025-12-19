@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "mcp-admin-ui"
+version = "0.1.0"
+description = "Admin Dashboard for MCP-NG"
+authors = ["Lotargo"]
+license = "MIT"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+gradio = "^4.44.0"
+requests = "^2.31.0"
+huggingface-hub = "^0.23.0"
+google-generativeai = "^0.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

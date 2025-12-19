@@ -1,0 +1,19 @@
+{
+    "name": "file_writer",
+    "description": "Writes content to a file. IMPORTANT: You must provide the full, absolute path to the file, including the filename and extension (e.g., 'C:\\Users\\user\\file.txt'). Do NOT provide only a directory path.",
+    "inputSchema": {
+        "type": "object",
+        "properties": {
+            "path": {
+                "type": "string",
+                "description": "The full, absolute path of the file to write to, including filename and extension."
+            },
+            "content": {
+                "type": "string",
+                "description": "The content to write into the file."
+            }
+        },
+        "required": ["path", "content"]
+    },
+    "command": ["file_writer"]
+}

@@ -1,0 +1,15 @@
+{
+    "name": "db_querier",
+    "description": "Queries a database.",
+    "inputSchema": {
+        "type": "object",
+        "properties": {
+            "query": {
+                "type": "string",
+                "description": "The SQL query to execute."
+            }
+        },
+        "required": ["query"]
+    },
+    "command": ["db_querier"]
+}
